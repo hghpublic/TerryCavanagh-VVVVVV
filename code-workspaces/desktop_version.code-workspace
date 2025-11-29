@@ -1,0 +1,12 @@
+{
+	"folders": [
+        {
+            "path": "..",
+            "name": "root"
+        },
+        {
+            "path": "../desktop_version",
+            "name": "desktop_version"
+        }
+    ]
+}

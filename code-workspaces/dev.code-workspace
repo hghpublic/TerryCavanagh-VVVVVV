@@ -1,0 +1,28 @@
+{
+	"folders": [
+        {
+            "path": "..",
+            "name": "root"
+        },
+        {
+            "path": "../dev/allegro/allegro4/demos",
+            "name": "allegro4 - demos"
+        },
+        {
+            "path": "../dev/allegro/allegro4/examples",
+            "name": "allegro4 - examples"
+        },
+        {
+            "path": "../dev/allegro/allegro4/src/hello",
+            "name": "allegro4 - hello"
+        },
+        {
+            "path": "../dev/allegro/allegro4/src/triangle",
+            "name": "allegro4 - triangle"
+        },
+        {
+            "path": "../dev/allegro/allegro4/src/examples",
+            "name": "allegro4 - more examples"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+	"folders": [
+        {
+            "path": "..",
+            "name": "root"
+        },
+        {
+            "path": "../tools/editors/Final-Level-Editor",
+            "name": "Final Level Editor"
+        },
+        {
+            "path": "../tools/editors/Lab-Map-Editor",
+            "name": "Lab Map Editor"
+        },
+        {
+            "path": "../tools/editors/Level-Mapping-Editor",
+            "name": "Level Mapping Editor"
+        },
+        {
+            "path": "../tools/editors/Original-Space-Station-Map-Editor",
+            "name": "Original Space Station Map Editor"
+        },
+        {
+            "path": "../tools/editors/Other-Map-Editor",
+            "name": "Other Map Editor"
+        },
+        {
+            "path": "../tools/editors/Screenshot-Outputting-Map-Editor",
+            "name": "Screenshot Outputting Map Editor"
+        },
+        {
+            "path": "../tools/editors/Space-Station-2-Editor",
+            "name": "Space Station 2 Editor"
+        },
+        {
+            "path": "../tools/editors/Tower-Map-Editor",
+            "name": "Tower Map Editor"
+        },
+        {
+            "path": "../tools/editors/Towerhallways-Editor",
+            "name": "Towerhallways Editor"
+        },
+        {
+            "path": "../tools/editors/Warp-Zone-Map-Editor",
+            "name": "Warp Zone Map Editor"
+        },
+        {
+            "path": "../tools/editors/World-Map-Fork-(for-Eurogamer)",
+            "name": "World Map Fork (for Eurogamer)"
+        },
+        {
+            "path": "../tools/editors/World-Mapping-Editor",
+            "name": "World Mapping Editor"
+        }
+    ]
+}
