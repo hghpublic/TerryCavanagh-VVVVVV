@@ -1,0 +1,84 @@
+= Editors
+
+== Dependencies
+
+----
+libxcursor-dev
+liballegro4-dev
+liblodepng-dev
+----
+
+=== Allegro
+
+https://www.allegro.cc/resource/Libraries/ImageFormats/loadpng
+
+Source Directory » Libraries » Image Formats » loadpng
+Author:
+Peter Wang 
+Version:
+1.3 
+URL:
+http://tjaden.strangesoft.net/loadpng/
+
+PNG (Portable Network Graphics) is a cool raster image file format. libpng is the reference library for working with PNG files. loadpng is some glue that makes it easy to use libpng to load and save bitmaps from Allegro programs.
+
+----
+
+❯ find . -type f -name "loadpng.h"
+
+
+❯ find /usr -type f -name "*alleg*"   
+/usr/lib/aarch64-linux-gnu/pkgconfig/allegro.pc
+/usr/lib/aarch64-linux-gnu/allegro/4.4.3/alleg-dga2.so
+/usr/lib/aarch64-linux-gnu/allegro/4.4.3/alleg-alsamidi.so
+/usr/lib/aarch64-linux-gnu/allegro/4.4.3/alleg-alsadigi.so
+/usr/lib/aarch64-linux-gnu/liballeg.so.4.4.3
+/usr/lib/aarch64-linux-gnu/libjpgalleg.so.4.4.3
+/usr/share/lintian/overrides/libjpgalleg4.4t64
+/usr/share/lintian/overrides/liballegro4.4t64
+/usr/include/allegro.h
+/usr/include/xalleg.h
+/usr/local/vcpkg/versions/a-/allegro5.json
+/usr/bin/allegro-config
+
+❯ allegro-config --version
+4.4.3
+
+❯ allegro-config --libs 
+-L/usr/lib/aarch64-linux-gnu -lalleg
+
+❯ allegro-config --cflags
+-I/usr/include
+
+❯ allegro-config --cppflags
+-I/usr/include
+
+❯ pkg-config --cflags --libs allegro
+-lalleg 
+----
+
+----
+sudo apt install liballegro4-dev
+sudo apt install liballegro5-dev
+----
+
+https://liballeg.org/
+
+https://github.com/liballeg/allegro5
+
+----
+
+    find_package(unofficial-allegro5 CONFIG REQUIRED)
+    # Note: 9 target(s) were omitted.
+    target_link_libraries(main PRIVATE allegro allegro_ttf allegro_font allegro_main)
+----
+
+=== LodePNG
+
+https://lodev.org/lodepng/
+
+https://github.com/lvandeve/lodepng
+
+----
+sudo apt install liblodepng-dev 
+----
