@@ -1,0 +1,11 @@
+= vscode
+
+== Multi-root Workspaces
+
+https://code.visualstudio.com/docs/editing/workspaces/multi-root-workspaces
+
+== Stash
+
+=== VS Code Setup for Multi Root Workspace with Different Environments
+
+https://stackoverflow.com/questions/79735492/vs-code-setup-for-multi-root-workspace-with-different-environments

@@ -1,0 +1,24 @@
+= Allegro 5
+:toc:
+:sectnums:
+:icons: font
+
+
+== allegro
+
+. https://liballeg.org/
+. https://www.allegro.cc/
+
+== Documentation
+
+https://liballeg.org/a5docs/trunk/
+
+=== Examples
+
+https://liballeg.org/examples_demos.html
+
+
+=== GitHub
+
+https://github.com/liballeg/allegro5
+

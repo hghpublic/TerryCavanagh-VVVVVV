@@ -1,0 +1,38 @@
+= Allegro 4
+:toc:
+:sectnums:
+:icons: font
+
+== allegro
+
+. https://liballeg.org/
+. https://www.allegro.cc/
+
+=== Documentation
+
+https://liballeg.org/stabledocs/en/index.html
+
+=== Examples
+
+https://liballeg.org/examples_demos.html
+
+==== Allegro examples
+
+https://liballeg.org/stabledocs/en/alleg045.html
+
+=== GitHub
+
+https://github.com/liballeg/allegro4
+
+
+=== Older versions
+
+https://liballeg.org/old.html
+
+=== loadpng
+
+glue for Allegro and libpng
+
+https://liballeg.org/stabledocs/en/addons.html#loadpng
+
+https://github.com/liballeg/allegro4/tree/master/addons/loadpng

@@ -1,0 +1,53 @@
+
+Started test
+
+Print info:
+
+Server String: 192.168.178.39:4713
+Library Protocol Version: 35
+Server Protocol Version: 35
+Is Local: no
+Client Index: 212
+Tile Size: 65472
+User Name: hgh
+Host Name: HGHDEVMBP2401
+Server Name: pulseaudio
+Server Version: 17.0
+Default Sample Specification: s16le 2ch 44100Hz
+Default Channel Map: front-left,front-right
+Default Sink: Channel_1__Channel_2.3
+Default Source: Front_Left
+Cookie: e2bb:103b
+
+List sinks:
+
+	Name: Channel_1__Channel_2
+	Name: Channel_1__Channel_2.2
+	Name: Channel_1__Channel_2.3
+	Name: Front_Left__Front_Right
+	Name: 1__2
+	Name: Channel_1
+
+Query default sink:
+
+Channel_1__Channel_2.3
+
+Play sine tone
+
+
+speaker-test 1.2.9
+
+Playback device is default
+Stream parameters are 48000Hz, S16_LE, 1 channels
+Sine wave rate is 200.0000Hz
+Rate set to 48000Hz (requested 48000Hz)
+Buffer size range from 192 to 2097152
+Period size range from 64 to 699051
+Requested period time 100 us
+Requested buffer time 1024 us
+was set period_size = 64
+was set buffer_size = 192
+ 0 - Front Left
+Time per period = 2.749479
+
+Finished test
