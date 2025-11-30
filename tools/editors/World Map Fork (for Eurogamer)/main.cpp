@@ -5,6 +5,17 @@
 #include <loadpng.h>
 using namespace std;
 
+#include <cstdlib>
+#include <filesystem>
+namespace
+{
+  namespace fs = std::filesystem;
+  static const std::string VVVVVV_ROOT{std::getenv("VVVVVV_ROOT") ? std::getenv("VVVVVV_ROOT") : ""};
+  static const fs::path DATA_DIR{VVVVVV_ROOT.empty() ? fs::path() : fs::path(VVVVVV_ROOT) / "assets" / "game" / "data"};
+  static const std::string TILES_PNG{(DATA_DIR / "graphics" / "tiles.png").string()};
+  static const std::string TILES2_PNG{(DATA_DIR / "graphics" / "tiles2.png").string()};
+}
+
 volatile int speed_counter=0;
 void increment_speed_counter(){speed_counter++;}
 END_OF_FUNCTION(increment_speed_counter);

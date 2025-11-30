@@ -93,8 +93,12 @@ void mapeditrender(){
   //  print(biggerbuffer, 5, 15+(i*10), tempstring, 255,255,255);
  // }
 
-  blit(biggerbuffer, page[currentpage], 0, 0, 0, 0, 640, 480);
-  //Instructions, more info
+    const BITMAP* dest = page[currentpage];
+   //FIXME
+   if(dest)
+   blit(biggerbuffer, page[currentpage], 0, 0, 0, 0, 640, 480);
+   //Instructions, more info
+   if(dest)
   show_video_bitmap(page[currentpage]);
   currentpage = (currentpage+1)%3;
 }
@@ -170,8 +174,12 @@ void arearender(){
   //  print(biggerbuffer, 5, 15+(i*10), tempstring, 255,255,255);
  // }
 
-  blit(biggerbuffer, page[currentpage], 0, 0, 0, 0, 640, 480);
-  //Instructions, more info
+    const BITMAP* dest = page[currentpage];
+   //FIXME
+   if(dest)
+   blit(biggerbuffer, page[currentpage], 0, 0, 0, 0, 640, 480);
+   //Instructions, more info
+   if(dest)
   show_video_bitmap(page[currentpage]);
   currentpage = (currentpage+1)%3;
 }

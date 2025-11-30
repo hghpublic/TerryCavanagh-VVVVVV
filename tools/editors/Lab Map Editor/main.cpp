@@ -5,6 +5,17 @@
 #include <loadpng.h>
 using namespace std;
 
+#include <cstdlib>
+#include <filesystem>
+namespace
+{
+  namespace fs = std::filesystem;
+  static const std::string VVVVVV_ROOT{std::getenv("VVVVVV_ROOT") ? std::getenv("VVVVVV_ROOT") : ""};
+  static const fs::path DATA_DIR{VVVVVV_ROOT.empty() ? fs::path() : fs::path(VVVVVV_ROOT) / "assets" / "game" / "data"};
+  static const std::string TILES_PNG{(DATA_DIR / "graphics" / "tiles.png").string()};
+  static const std::string TILES2_PNG{(DATA_DIR / "graphics" / "tiles2.png").string()};
+}
+
 volatile int speed_counter=0;
 void increment_speed_counter(){speed_counter++;}
 END_OF_FUNCTION(increment_speed_counter);
@@ -552,9 +563,9 @@ int main(){
   fullscreen=false;
 
   if(tileset==0){
-    buffer=load_png("../../engine/current/data/graphics/tiles.png", dummypal);
+    buffer=load_png(TILES_PNG.c_str(), dummypal);
   }else if(tileset==1){
-    buffer=load_png("../../engine/current/data/graphics/tiles2.png", dummypal);
+    buffer=load_png(TILES2_PNG.c_str(), dummypal);
   }
   for(int y=0;y<30;y++){
     for(int x=0;x<40;x++){
@@ -769,8 +780,13 @@ int main(){
     //  print(biggerbuffer, 5, 15+(i*10), tempstring, 255,255,255);
    // }
 
+    const BITMAP* dest = page[currentpage];
+    //FIXME
+    if(dest)
     blit(biggerbuffer, page[currentpage], 0, 0, 0, 0, 640, 480);
     //Instructions, more info
+    //FIXME
+    if(dest)
     show_video_bitmap(page[currentpage]);
     currentpage = (currentpage+1)%3;
     //Input

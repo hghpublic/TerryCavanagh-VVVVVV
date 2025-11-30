@@ -89,7 +89,7 @@ void init(){
 
   worldmap=create_bitmap(800,600);
 
-  buffer=load_png("../../engine/current/data/graphics/tiles.png", dummypal);
+  buffer=load_png(TILES_PNG.c_str(), dummypal);
 
   for(int y=0;y<30;y++){
     for(int x=0;x<40;x++){
@@ -100,7 +100,7 @@ void init(){
   }
   destroy_bitmap(buffer);
 
-  buffer=load_png("../../engine/current/data/graphics/tiles2.png", dummypal);
+  buffer=load_png(TILES2_PNG.c_str(), dummypal);
   for(int y=0;y<30;y++){
     for(int x=0;x<40;x++){
       tiles2[x+(y*40)] = create_bitmap(8, 8);
